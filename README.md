@@ -2,7 +2,7 @@
 testing react component
 
 - a component
-- a small jest test to test the generated html (npm run test)
-- webpack can create build (npm run build)
+- npm run test: a small jest test to test the generated html using snapshots
+- npm run build: webpack creates build
 
 That's all :-)
