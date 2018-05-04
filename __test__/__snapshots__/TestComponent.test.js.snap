@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot of component without  props 1`] = `
+<div>
+  <h3>
+    TestComponent
+  </h3>
+  <button
+    onClick={[Function]}
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Snapshot of component without  props 2`] = `
+<div>
+  <h3>
+    TestComponent
+  </h3>
+  <button
+    onClick={[Function]}
+  >
+    button
+  </button>
+  <div>
+    More: Ein Text und so weiter
+  </div>
+</div>
+`;
+
+exports[`Snapshot of component without  props 3`] = `
+<div>
+  <h3>
+    TestComponent
+  </h3>
+  <button
+    onClick={[Function]}
+  >
+    button
+  </button>
+  <div>
+    More: Ein Text und so weiter
+  </div>
+</div>
+`;
