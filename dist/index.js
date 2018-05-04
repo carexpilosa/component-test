@@ -323,6 +323,18 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 
 /***/ }),
 
+/***/ "./src/TestComponent.js":
+/*!******************************!*\
+  !*** ./src/TestComponent.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar TestComponent = function (_React$Component) {\n  _inherits(TestComponent, _React$Component);\n\n  function TestComponent(props) {\n    _classCallCheck(this, TestComponent);\n\n    var _this = _possibleConstructorReturn(this, (TestComponent.__proto__ || Object.getPrototypeOf(TestComponent)).call(this, props));\n\n    _this.state = {\n      showHint: false\n    };\n    return _this;\n  }\n\n  _createClass(TestComponent, [{\n    key: 'render',\n    value: function render() {\n      return _react2.default.createElement(\n        'div',\n        null,\n        _react2.default.createElement(\n          'h3',\n          null,\n          'TestComponent'\n        ),\n        _react2.default.createElement(\n          'button',\n          { onClick: this.showTheHint.bind(this) },\n          'button'\n        ),\n        this.props.more ? _react2.default.createElement(\n          'div',\n          null,\n          'More: Ein Text und so weiter'\n        ) : null,\n        this.state.showHint ? _react2.default.createElement(\n          'div',\n          null,\n          'Hint: A Test Component'\n        ) : null\n      );\n    }\n  }, {\n    key: 'showTheHint',\n    value: function showTheHint() {\n      this.setState({\n        showHint: true\n      });\n    }\n  }]);\n\n  return TestComponent;\n}(_react2.default.Component);\n\nexports.default = TestComponent;\n\n//# sourceURL=webpack:///./src/TestComponent.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -331,7 +343,7 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n_reactDom2.default.render(React.createElement(\n  'div',\n  null,\n  'schn\\xF6d'\n));\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _TestComponent = __webpack_require__(/*! ./TestComponent */ \"./src/TestComponent.js\");\n\nvar _TestComponent2 = _interopRequireDefault(_TestComponent);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n_reactDom2.default.render(_react2.default.createElement(\n  'div',\n  null,\n  _react2.default.createElement(_TestComponent2.default, null)\n), document.getElementById('myApp'));\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

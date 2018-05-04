@@ -42,5 +42,8 @@ exports[`Snapshot of component without  props 3`] = `
   <div>
     More: Ein Text und so weiter
   </div>
+  <div>
+    Hint: A Test Component
+  </div>
 </div>
 `;

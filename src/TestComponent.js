@@ -22,8 +22,8 @@ export default class TestComponent extends React.Component {
             null
         }
         {
-          this.state.hint ?
-            <div>Hint: A Test Component :</div> :
+          this.state.showHint ?
+            <div>Hint: A Test Component</div> :
             null
         }
       </div>

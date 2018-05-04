@@ -16,6 +16,7 @@ test('Snapshot of component without  props', () => {
   expect(tree).toMatchSnapshot();
 
   component.toTree().instance.showTheHint();
+  console.log(component.toTree().instance.state.showHint);
   tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
