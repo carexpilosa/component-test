@@ -8,7 +8,13 @@ exports[`Snapshot of component without  props 1`] = `
   <button
     onClick={[Function]}
   >
-    button
+    show hint
+  </button>
+  <br />
+  <button
+    onClick={[Function]}
+  >
+    hide hint
   </button>
 </div>
 `;
@@ -21,7 +27,13 @@ exports[`Snapshot of component without  props 2`] = `
   <button
     onClick={[Function]}
   >
-    button
+    show hint
+  </button>
+  <br />
+  <button
+    onClick={[Function]}
+  >
+    hide hint
   </button>
   <div>
     More: Ein Text und so weiter
@@ -37,7 +49,38 @@ exports[`Snapshot of component without  props 3`] = `
   <button
     onClick={[Function]}
   >
-    button
+    show hint
+  </button>
+  <br />
+  <button
+    onClick={[Function]}
+  >
+    hide hint
+  </button>
+  <div>
+    More: Ein Text und so weiter
+  </div>
+  <div>
+    Hint: A Test Component
+  </div>
+</div>
+`;
+
+exports[`Snapshot of component without  props 4`] = `
+<div>
+  <h3>
+    TestComponent
+  </h3>
+  <button
+    onClick={[Function]}
+  >
+    show hint
+  </button>
+  <br />
+  <button
+    onClick={[Function]}
+  >
+    hide hint
   </button>
   <div>
     More: Ein Text und so weiter

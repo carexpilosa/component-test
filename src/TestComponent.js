@@ -13,7 +13,8 @@ export default class TestComponent extends React.Component {
     return (
       <div>
         <h3>TestComponent</h3>
-        <button onClick={this.showTheHint.bind(this)}>button</button>
+        <button onClick={this.showTheHint.bind(this)}>show hint</button><br />
+        <button onClick={this.hideTheHint.bind(this)}>hide hint</button>
         {
           this.props.more ?
             <div>
@@ -33,6 +34,12 @@ export default class TestComponent extends React.Component {
   showTheHint() {
     this.setState({
       showHint: true
+    });
+  }
+
+  hideTheHint() {
+    this.setState({
+      showHint: false
     });
   }
 }
