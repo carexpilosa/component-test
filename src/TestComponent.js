@@ -10,6 +10,7 @@ export default class TestComponent extends React.Component {
   }
 
   render() {
+    const SubComp = this.props.subComponent;
     return (
       <div>
         <h3>TestComponent</h3>
@@ -21,6 +22,9 @@ export default class TestComponent extends React.Component {
                 More: Ein Text und so weiter
             </div> :
             null
+        }
+        {
+          SubComp ? <SubComp /> : null
         }
         {
           this.state.showHint ?

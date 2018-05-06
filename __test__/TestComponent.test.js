@@ -22,6 +22,19 @@ test('Snapshot of component without  props', () => {
   component.toTree().instance.showTheHint();
   tree = component.toJSON();
   expect(tree).toMatchSnapshot();
+
+  //subComponent:
+  component = renderer.create(
+    <TestComponent subComponent={SubComponent} />,
+  );
+  tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });
 
 //jest --updateSnapshot
+
+class SubComponent extends React.Component {
+  render() {
+    return <h5>SubComponent</h5>;
+  }
+}

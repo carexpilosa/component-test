@@ -90,3 +90,25 @@ exports[`Snapshot of component without  props 4`] = `
   </div>
 </div>
 `;
+
+exports[`Snapshot of component without  props 5`] = `
+<div>
+  <h3>
+    TestComponent
+  </h3>
+  <button
+    onClick={[Function]}
+  >
+    show hint
+  </button>
+  <br />
+  <button
+    onClick={[Function]}
+  >
+    hide hint
+  </button>
+  <h5>
+    SubComponent
+  </h5>
+</div>
+`;
